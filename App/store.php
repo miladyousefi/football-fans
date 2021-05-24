@@ -1,7 +1,9 @@
 <?php
-error_reporting(E_ALL); // or E_STRICT
-ini_set("display_errors",1);
-ini_set("memory_limit","1024M");
+session_start();
+if(empty($_SESSION['user'])) {
+  header("Location: index.php");
+  session_abort();
+}
 include('parcial/head.php');
 include('parcial/nav.php');
 include('../Database/connect_db.php');

@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!$_SESSION['user']){
+  header("Location: index.php");
+}
 include('parcial/head.php');
 include('parcial/nav.php');
 include('../Database/connect_db.php');
@@ -131,7 +135,7 @@ while($row = mysqli_fetch_assoc($result)){
 </div>
 
    <?php }else{?>
-    <script type="text/javascript">location.href = 'http://localhost/football/App/register_temp.php';</script>
+    <script type="text/javascript">location.href = 'http://localhost/football-fans/App/register_temp.php';</script>
 
    <?php } ?>
 <?php }?>

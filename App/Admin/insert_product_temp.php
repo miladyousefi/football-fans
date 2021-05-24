@@ -9,9 +9,19 @@ include('parcial_admin/nav.php');
 
 <div class="form-group">
    عکس
-    <input type="file" name="product_image" class="form-control">
+    <input type="file" id="product_image" style="display:none" name="product_image" class="form-control">
+    <div class="card-columns" onclick="document.getElementById('product_image').click();">
+      <a href="#">
+      <div class="card bg-danger">
+        <div class="card-body text-center">
+          <p class="card-text text-white">انتخاب عکس برای محصول</p>
+        </div>
+      </div>
+      </a>
+    </div>
+    
   </div>
-  <div class="form-group col-md-4">
+  <div class="form-group col-md-12">
       <label for="inputState">شهر</label>
       <select name="product_cat" id="inputState" class="form-control">
         <option value="تی شرت">تی شرت</option>
@@ -21,7 +31,7 @@ include('parcial_admin/nav.php');
 
   <div class="form-group">
     <label for="formGroupExampleInput">برند</label>
-    <input type="text" name="product_brand" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    <input type="text" name="product_brand" class="form-control" id="formGroupExampleInput" placeholder="برند">
   </div>
 
 
@@ -43,7 +53,7 @@ include('parcial_admin/nav.php');
 </div>
 
 <div class="form-group">
-  <label for="exampleFormControlTextarea1">دسته </label>
+  <label for="exampleFormControlTextarea1">دسته بندی </label>
   <input type="text" name="product_keywords" class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
 </div>
 

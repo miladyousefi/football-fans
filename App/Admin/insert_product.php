@@ -1,7 +1,5 @@
 <?php
-error_reporting(E_ALL); // or E_STRICT
-ini_set("display_errors",1);
-ini_set("memory_limit","1024M");
+include('functions/session.php');
 include('../../Database/connect_db.php');
 $product_cat=$_POST['product_cat'];
 $product_brand=$_POST['product_brand'];

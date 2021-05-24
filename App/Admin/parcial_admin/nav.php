@@ -5,7 +5,9 @@ ini_set("memory_limit","1024M");
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="margin-bottom: 10px;" dir="rtl">
-  <a class="navbar-brand" href="../index.php">هواداری</a>
+  <a class="navbar-brand" href="../index.php">
+    <img src="http://localhost/football-fans/Public/img/l.png" width="90" alt="هواداری">
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -67,7 +69,7 @@ ini_set("memory_limit","1024M");
              
         ?>
       <li class="nav-item">
-        <a class="nav-link" href="../Admin/logout_admin.php"> Logout Admin  </a>
+        <a class="nav-link" href="../Admin/logout_admin.php"> خروج ادمین </a>
       </li>
 
               <?php } ?>

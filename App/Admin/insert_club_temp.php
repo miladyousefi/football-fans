@@ -6,19 +6,26 @@ include('parcial_admin/head.php');
 include('parcial_admin/nav.php');
 ?>
 <div class="container">
-<form action="insert_club.php" method="post" enctype="multipart/form-data">
+<form action="insert_club.php" method="post" enctype="multipart/form-data" dir="rtl">
 
 
 
 <div class="form-group">
    لوگو
-    <input type="file" name="icon" class="form-control">
+    <input type="file" id="icon" name="icon" style="display:none" class="form-control">
+    <a href="#" onclick="document.getElementById('icon').click();">
+      <div class="card bg-danger">
+        <div class="card-body text-center">
+          <p class="card-text text-white">انتخاب لوگوی باشگاه</p>
+        </div>
+      </div>
+      </a>
   </div>
  
 
   <div class="form-group">
     <label for="formGroupExampleInput">نام  باشگاه</label>
-    <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    <input type="text" name="name" class="form-control" id="formGroupExampleInput" >
   </div>
 
 
